@@ -4,7 +4,7 @@ import { viteStaticCopy } from "vite-plugin-static-copy";
 import path from "path";
 
 export default defineConfig({
-  base: "/portfolio/", // important for GitHub Pages
+  base: "/", // important for GitHub Pages
   build: {
     outDir: "dist",
     emptyOutDir: true,
