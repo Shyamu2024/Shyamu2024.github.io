@@ -13,8 +13,7 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description:
         "A full-stack e-commerce solution built with Django and React. Features include user authentication, product management, shopping cart, and payment integration.",
-      image:
-        "https://source.unsplash.com/random/800x600?ecommerce,shopping,website&sig=1",
+      image: "https://picsum.photos/seed/ecommerce-1/800/600",
       technologies: ["Django", "React", "PostgreSQL", "Stripe"],
       category: "fullstack",
       liveUrl: "#",
@@ -26,8 +25,7 @@ const Projects = () => {
       title: "Bullet News",
       description:
         "A collaborative News application with real-time updates, Audio Feature and Sumarized News.",
-      image:
-        "https://source.unsplash.com/random/800x600?kanban,task,productivity,app&sig=2",
+      image: "https://picsum.photos/seed/bullet-news-2/800/600",
       technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
       category: "frontend",
       liveUrl: "#",
@@ -39,8 +37,7 @@ const Projects = () => {
       title: "Portfolio Website",
       description:
         "A responsive portfolio website with modern animations and dark/light mode toggle. Built with React and Framer Motion.",
-      image:
-        "https://source.unsplash.com/random/800x600?portfolio,developer,workspace&sig=3",
+      image: "https://picsum.photos/seed/portfolio-3/800/600",
       technologies: ["React", "Framer Motion", "CSS3", "Responsive Design"],
       category: "frontend",
       liveUrl: "#",
@@ -52,8 +49,7 @@ const Projects = () => {
       title: "REST API Service",
       description:
         "A robust REST API built with Django REST Framework. Includes authentication, rate limiting, and comprehensive documentation.",
-      image:
-        "https://source.unsplash.com/random/800x600?api,server,backend&sig=4",
+      image: "https://picsum.photos/seed/api-4/800/600",
       technologies: ["Django", "Django REST Framework", "PostgreSQL", "Docker"],
       category: "backend",
       liveUrl: "#",
@@ -65,8 +61,7 @@ const Projects = () => {
       title: "Weather Dashboard",
       description:
         "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.",
-      image:
-        "https://source.unsplash.com/random/800x600?weather,forecast,city&sig=5",
+      image: "https://picsum.photos/seed/weather-5/800/600",
       technologies: ["React", "Chart.js", "OpenWeather API", "CSS3"],
       category: "frontend",
       liveUrl: "#",
@@ -78,8 +73,7 @@ const Projects = () => {
       title: "Blog CMS",
       description:
         "A content management system for blogs with rich text editor, image uploads, and SEO optimization features.",
-      image:
-        "https://source.unsplash.com/random/800x600?blog,cms,writing&sig=6",
+      image: "https://picsum.photos/seed/blog-6/800/600",
       technologies: ["Django", "Jinja2", "PostgreSQL", "AWS S3"],
       category: "fullstack",
       liveUrl: "#",
@@ -122,9 +116,8 @@ const Projects = () => {
         <motion.div
           className="projects-content"
           variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          initial={false}
+          animate="visible"
         >
           <motion.div className="projects-header" variants={itemVariants}>
             <h2 className="section-title">My Projects</h2>

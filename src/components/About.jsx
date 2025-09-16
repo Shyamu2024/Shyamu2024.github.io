@@ -45,9 +45,8 @@ const About = () => {
         <motion.div
           className="about-content"
           variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          initial={false}
+          animate="visible"
         >
           <motion.div className="about-header" variants={itemVariants}>
             <h2 className="section-title">About Me</h2>
@@ -87,11 +86,7 @@ const About = () => {
               <h3>Skills & Technologies</h3>
               <div className="skills-grid">
                 {skills.map((skill, index) => (
-                  <SkillCard 
-                    key={skill.name}
-                    skill={skill}
-                    index={index}
-                  />
+                  <SkillCard key={skill.name} skill={skill} index={index} />
                 ))}
               </div>
             </motion.div>

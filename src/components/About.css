@@ -1,6 +1,9 @@
 .about {
   padding: 6rem 0;
   background: #f8f9fa;
+  position: relative;
+  z-index: 2;
+  scroll-margin-top: 80px;
 }
 
 .about.dark {
@@ -145,6 +148,10 @@
 @media (max-width: 768px) {
   .about {
     padding: 4rem 0;
+    position: relative;
+    z-index: 2;
+    visibility: visible;
+    opacity: 1;
   }
 
   .container {
