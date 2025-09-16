@@ -1,0 +1,138 @@
+.floating-element {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-small {
+  width: 20px;
+  height: 20px;
+}
+
+.floating-medium {
+  width: 40px;
+  height: 40px;
+}
+
+.floating-large {
+  width: 60px;
+  height: 60px;
+}
+
+/* Shape styles */
+.circle {
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  opacity: 0.3;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  background: none;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 26px solid #667eea;
+  opacity: 0.3;
+}
+
+.square {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  opacity: 0.3;
+  transform: rotate(45deg);
+}
+
+.hexagon {
+  width: 30px;
+  height: 17.32px;
+  background: #667eea;
+  position: relative;
+  opacity: 0.3;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 8.66px solid #667eea;
+}
+
+.hexagon:after {
+  top: 100%;
+  border-top: 8.66px solid #667eea;
+}
+
+/* Dark mode adjustments */
+.dark .circle {
+  background: linear-gradient(135deg, #8b9cff 0%, #a78bfa 100%);
+}
+
+.dark .triangle {
+  border-bottom-color: #8b9cff;
+}
+
+.dark .square {
+  background: linear-gradient(135deg, #a78bfa 0%, #8b9cff 100%);
+}
+
+.dark .hexagon {
+  background: #8b9cff;
+}
+
+.dark .hexagon:before {
+  border-bottom-color: #8b9cff;
+}
+
+.dark .hexagon:after {
+  border-top-color: #8b9cff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-small {
+    width: 15px;
+    height: 15px;
+  }
+
+  .floating-medium {
+    width: 30px;
+    height: 30px;
+  }
+
+  .floating-large {
+    width: 45px;
+    height: 45px;
+  }
+
+  .triangle {
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 17px;
+  }
+
+  .hexagon {
+    width: 20px;
+    height: 11.55px;
+  }
+
+  .hexagon:before,
+  .hexagon:after {
+    border-left-width: 10px;
+    border-right-width: 10px;
+  }
+
+  .hexagon:before {
+    border-bottom-width: 5.77px;
+  }
+
+  .hexagon:after {
+    border-top-width: 5.77px;
+  }
+}

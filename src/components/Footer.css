@@ -1,0 +1,227 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(102, 126, 234, 0.2);
+  margin-top: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  min-height: 200px;
+  background: #f8f9ff;
+  background: linear-gradient(
+    0deg,
+    rgba(102, 126, 234, 0.08),
+    rgba(102, 126, 234, 0)
+  );
+}
+
+.footer.dark {
+  border-top-color: rgba(139, 156, 255, 0.25);
+  background: #0f1122;
+  background-image: linear-gradient(
+      180deg,
+      rgba(139, 156, 255, 0.12),
+      rgba(139, 156, 255, 0) 35%
+    ),
+    radial-gradient(
+      closest-side,
+      rgba(139, 156, 255, 0.15),
+      rgba(139, 156, 255, 0)
+    );
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1.2fr 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.footer.dark .footer-logo {
+  color: #8b9cff;
+}
+
+.footer-tagline {
+  color: #666;
+}
+
+.footer.dark .footer-tagline {
+  color: #cfd3ff;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+}
+
+.footer-link {
+  background: transparent;
+  border: none;
+  color: #444;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.footer.dark .footer-link {
+  color: #e3e6ff;
+}
+
+.footer-link:hover {
+  background: rgba(102, 126, 234, 0.12);
+  color: #333;
+}
+
+.footer.dark .footer-link:hover {
+  background: rgba(139, 156, 255, 0.22);
+  color: #ffffff;
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-btn {
+  text-decoration: none;
+  color: #555;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.5rem 0.9rem;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer.dark .social-btn {
+  background: #1c1d2d;
+  color: #e3e6ff;
+  border-color: rgba(139, 156, 255, 0.25);
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.footer-bottom {
+  margin-top: 1.75rem;
+  padding: 1rem 1rem 2rem;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+  border-top: 1px dashed rgba(102, 126, 234, 0.25);
+}
+
+.footer.dark .footer-bottom {
+  color: #cfd3ff;
+  border-top-color: rgba(139, 156, 255, 0.35);
+}
+
+/* RGB animation for name */
+.footer-name {
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+@keyframes rgbGlow {
+  0% {
+    color: #ff4d4d;
+    text-shadow: 0 0 8px rgba(255, 77, 77, 0.6);
+  }
+  33% {
+    color: #4dff4d;
+    text-shadow: 0 0 8px rgba(77, 255, 77, 0.6);
+  }
+  66% {
+    color: #4d4dff;
+    text-shadow: 0 0 8px rgba(77, 77, 255, 0.6);
+  }
+  100% {
+    color: #ff4d4d;
+    text-shadow: 0 0 8px rgba(255, 77, 77, 0.6);
+  }
+}
+
+.rgb-animate {
+  animation: rgbGlow 1.2s linear infinite;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 1.5rem;
+    padding-bottom: calc(1.5rem + env(safe-area-inset-bottom));
+    min-height: auto;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    text-align: center;
+  }
+
+  .footer-brand {
+    align-items: center;
+  }
+
+  .footer-logo {
+    font-size: 1.15rem;
+  }
+
+  .footer-tagline {
+    font-size: 0.95rem;
+  }
+
+  .footer-nav {
+    justify-content: center;
+    gap: 0.5rem 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-link {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .footer-social {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .social-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+    min-width: 140px;
+  }
+
+  .footer-bottom {
+    margin-top: 1.25rem;
+    padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+    font-size: 0.85rem;
+  }
+}

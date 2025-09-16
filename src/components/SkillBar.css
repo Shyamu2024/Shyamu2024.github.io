@@ -1,0 +1,94 @@
+.skill-bar-container {
+  position: relative;
+  background: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.skill-bar-container.dark {
+  background: #404040;
+}
+
+.skill-bar-normal {
+  height: 8px;
+}
+
+.skill-bar-thin {
+  height: 4px;
+}
+
+.skill-bar-thick {
+  height: 12px;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  position: relative;
+}
+
+.skill-bar-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.skill-bar-secondary {
+  background: linear-gradient(135deg, #00ffff 0%, #00bfbf 100%);
+}
+
+.skill-bar-success {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+}
+
+.skill-bar-warning {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+.skill-bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skill-percentage {
+  position: absolute;
+  right: 0;
+  top: -25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #667eea;
+}
+
+.skill-bar-container.dark .skill-percentage {
+  color: #8b9cff;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .skill-bar-container {
+    height: 6px;
+  }
+
+  .skill-percentage {
+    font-size: 0.8rem;
+    top: -20px;
+  }
+}
