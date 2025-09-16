@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
 
-"homepage": "https://shyamu2024.github.io/portfolio",
+"homepage": "https://shyamu2024.github.io",
 
  "scripts": {
   "dev": "vite",
