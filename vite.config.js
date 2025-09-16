@@ -2,8 +2,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import path from "path";
-const config = {
-  mode: "development",
+
+export default defineConfig({
+  base: "/portfolio/", // important for GitHub Pages
   build: {
     outDir: "dist",
     emptyOutDir: true,
@@ -21,13 +22,11 @@ const config = {
         { src: "./assets/*", dest: "assets" },
         {
           src: "./public/assets/{*,}",
-          dest: path.join("dist", "public/assets"),
+          dest: "public/assets",
         },
-        { src: "./assets/*", dest: path.join("dist", "assets") },
+        { src: "./assets/*", dest: "assets" },
       ],
       silent: true,
     }),
   ],
-  resolve: {},
-};
-export default defineConfig(config);
+});

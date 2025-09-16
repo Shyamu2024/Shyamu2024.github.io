@@ -6,15 +6,12 @@
 
 "homepage": "https://shyamu2024.github.io/portfolio",
 
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start": "vite",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "@kombai/react-error-boundary": "^1.1.0",
     "date-fns": "^4.1.0",
