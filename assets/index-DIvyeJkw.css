@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');.theme-toggle {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");.theme-toggle {
   position: relative;
   width: 60px;
   height: 30px;
@@ -735,7 +735,8 @@
   .cta-buttons {
     gap: 1.2rem;
   }
-}.skill-bar-container {
+}
+.skill-bar-container {
   position: relative;
   background: #e0e0e0;
   border-radius: 6px;
@@ -1387,7 +1388,7 @@
 }
 
 .achievements li::before {
-  content: '✓';
+  content: "✓";
   position: absolute;
   left: 0;
   color: #667eea;
@@ -1474,7 +1475,8 @@
   .timeline-content {
     padding: 1.8rem;
   }
-}.project-card {
+}
+.project-card {
   background: white;
   border-radius: 16px;
   overflow: hidden;
@@ -2593,7 +2595,7 @@ textarea:focus {
   box-sizing: border-box;
 }
 
-:root{
+:root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -2605,8 +2607,8 @@ textarea:focus {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2615,7 +2617,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 

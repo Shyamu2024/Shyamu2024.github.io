@@ -27156,7 +27156,7 @@ const Header = () => {
             className: "logo",
             whileHover: { scale: 1.05 },
             whileTap: { scale: 0.95 },
-            children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "logo-text", children: "Portfolio" })
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "logo-text", children: "Shyam Sundar Wagle" })
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { className: "nav", children: /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "nav-list", children: navItems.map((item) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { className: "nav-item", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -28328,4 +28328,4 @@ function App() {
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(reactExports.StrictMode, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );
-//# sourceMappingURL=index-C7TnTvdu.js.map
+//# sourceMappingURL=index-cfbWf2xt.js.map
